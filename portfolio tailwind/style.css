@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    letter-spacing: 8px;
+}
+/****************************NAVBAR********************************/
+nav{
+    height: 50px;
+    background-image: linear-gradient(to left bottom,rgb(170, 120, 120), rgb(178, 27, 27));
+    border-bottom: 1px solid white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.492);
+}
+nav ul li a:hover{
+    border: 1px solid white;
+    color: rgb(150, 0, 0);
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/************************ABOUT SECTION***************************/
+#about{
+    height: max-content;
+    background-image: linear-gradient(to right bottom,rgb(178, 27, 27),rgb(170, 120, 120));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.492);
+}
+#about img{
+    width: 300px;
+    border-radius: 50%;
+}
+#about>div>div::after{
+    content: "";
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    filter: blur(200px);
+    position: absolute;
+}
+#description h2{
+    letter-spacing: 10px;
+    font-size: 2rem;
+}
+#description p{
+    color: rgba(0, 0, 0, 0.844);
+    font-size: 1.3rem;
+}
+#description button{
+    font-size: 20px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+#description button:hover{
+    background-color: white;
+    color: rgb(150, 0, 0);
+    cursor: pointer;
+}
+/*********************COMPETENCE SECTION*************************/
+#competence{
+    height: max-content;
+    color: rgb(150, 0, 0);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.492);
+}
+#competence h1::before{
+    content: "";
+    border-bottom: 3px solid rgb(150, 0, 0);
+    height: 5px;
+    width: 150px;
+    top: 20px;
+    left: 360px;
+    position: absolute;
+}
+#competence h1::after{
+    content: "";
+    border-bottom: 3px solid rgb(150, 0, 0);
+    height: 5px;
+    width: 150px;
+    top: 20px;
+    right: 370px;
+    position: absolute;
+}
+#competence>div ul{
+    color: rgb(81, 70, 70);
+    font-size: 1.2rem;
+}
+
+/****************EDUCATION SECTION**********************/
+
+#education{
+    height: max-content;
+    background-image: linear-gradient(to top right,rgb(178, 27, 27),rgb(170, 120, 120));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.492);
+}
+#education h1::before{
+    content: "";
+    border-bottom: 3px solid rgb(255, 255, 255);
+    height: 5px;
+    width: 150px;
+    top: 20px;
+    left: 280px;
+    position: absolute;
+}
+#education h1::after{
+    content: "";
+    border-bottom: 3px solid rgb(255, 255, 255);
+    height: 5px;
+    width: 150px;
+    top: 20px;
+    right: 290px;
+    position: absolute;
+}
+#education>div .education-steps{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+#education>div .education-steps h3{
+    letter-spacing: 1.5px;
+    line-height: 2;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#education>div .education-steps h4{
+    color: rgba(0, 0, 0, 0.692);
+    text-align: center;
+}
+#education>div .education-steps p{
+    color: rgba(0, 0, 0, 0.661);
+    line-height: 1.8;
+}
+
+/*********************EXPERIENCE SECTION***********************/
+
+#experience{
+    height: max-content;
+    color: rgb(150, 0, 0);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.492);
+}
+#experience h1::before{
+    content: "";
+    border-bottom: 3px solid rgb(150, 0, 0);
+    height: 5px;
+    width: 150px;
+    top: 20px;
+    left: -160px;
+    position: absolute;
+}
+#experience h1::after{
+    content: "";
+    border-bottom: 3px solid rgb(150, 0, 0);
+    height: 5px;
+    width: 150px;
+    top: 20px;
+    right: -150px;
+    position: absolute;
+}
+#experience>div ul{
+    color: rgb(81, 70, 70);
+    font-size: 1rem;
+    gap: 50px;
+}
+#experience>div ul li{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+#experience>div ul li h3{
+    text-align: center;
+    letter-spacing: 1.8px;
+}
+#experience>div ul li h4{
+    text-align: center;
+    text-decoration: underline;
+}
+#experience>div ul li p{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/*****************CONTACT SECTION********************/
+
+#contact{
+    background-image: linear-gradient(to bottom right,rgb(178, 27, 27),rgb(170, 120, 120));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.492);
+}
+#contact h1::before{
+    content: "";
+    border-bottom: 3px solid rgb(255, 255, 255);
+    height: 5px;
+    width: 150px;
+    top: 20px;
+    left: 400px;
+    position: absolute;
+}
+#contact h1::after{
+    content: "";
+    border-bottom: 3px solid rgb(255, 255, 255);
+    height: 5px;
+    width: 150px;
+    top: 20px;
+    right: 410px;
+    position: absolute;
+}
+#contact form{
+    margin-top: 60px;
+    font-size: 1.2rem;
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+}
+#contact form input:not(input[type="radio"]), #contact form textarea{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    width: 100%;
+}
+#contact form div input:focus, 
+#contact form div textarea:focus{
+    border: 3px solid rgb(226, 72, 72);
+    outline: none;
+}
+#contact form button{
+    width: 120px;
+    height: 50px;
+    font-size: 1.2rem;
+    background-color: rgb(65, 62, 62);
+    border-radius: 50px;
+    transition: 0.5s;
+}
+#contact form button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(81, 70, 70);
+    cursor: pointer;
+}
+/***************************FOOTER*********************************/
+
+footer{
+    height: max-content;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to top right,rgb(178, 27, 27),rgb(170, 120, 120));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.492);
+    letter-spacing: 1px;
+    gap: 50px;
+}
+footer a{
+    color: white;
+    font-size: 1.8rem;
+}
+footer .fixed-footer{
+    bottom: 5%;
+    left: 95%;
+    padding: 10px;
+    background-color: rgba(65, 62, 62, 0.497);
+    border-radius: 50%;
+    font-size: 30px;
+    transition: 0.5s;
+    color: white;
+}
+footer .fixed-footer:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(81, 70, 70);
+}
